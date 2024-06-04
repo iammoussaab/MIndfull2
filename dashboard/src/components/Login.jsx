@@ -19,7 +19,7 @@ const Login = () => {
       await axios
         .post(
           "http://localhost:5000/api/v1/user/login",
-          { email, password, confirmPassword, role: "Admin" },
+          { email, password, role: "Admin" },
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -45,8 +45,8 @@ const Login = () => {
   return (
     <>
       <section className="container form-component">
-        <img src="/logo.png" alt="logo" className="logo" />
-        <h1 className="form-title">WELCOME TO ZEECARE</h1>
+        <img src="/Mindfull.png" alt="logo" className="logo" />
+        <h1 className="form-title">WELCOME TO  MINDFULL</h1>
         <p>Only Admins Are Allowed To Access These Resources!</p>
         <form onSubmit={handleLogin}>
           <input

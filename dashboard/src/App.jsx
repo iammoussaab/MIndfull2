@@ -12,6 +12,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "./components/Sidebar";
 import AddNewAdmin from "./components/AddNewAdmin";
 import "./App.css";
+import Chatbot from "./components/Chatbot";
+
 
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, admin, setAdmin } =
@@ -41,6 +43,7 @@ const App = () => {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        {/* <Route path="/admin" element={<Dashboard />} /> */}
         <Route path="/login" element={<Login />} />
         <Route path="/doctor/addnew" element={<AddNewDoctor />} />
         <Route path="/admin/addnew" element={<AddNewAdmin />} />
@@ -48,6 +51,7 @@ const App = () => {
         <Route path="/doctors" element={<Doctors />} />
       </Routes>
       <ToastContainer position="top-center" />
+      <Chatbot />
     </Router>
   );
 };
