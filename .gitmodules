@@ -4,3 +4,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/iammoussaab/MIndfull2.git
+[submodule "dashboard"]
+	path = dashboard
+	url = https://github.com/iammoussaab/MIndfull2.git
